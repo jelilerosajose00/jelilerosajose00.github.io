@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jelile Rosa Jose | Electronic &amp; Electrical Engineer</title>
+<meta name="description" content="Portfolio of Jelile Rosa Jose, MSc Electronic & Electrical Engineering, University of Leeds. MedTech instrumentation, analogue front-end design, FPGA, semiconductors, robotics.">
+<style>
+  :root {
+    --bg: #fafaf8; --card: #ffffff; --ink: #1c2733; --muted: #5b6b7b;
+    --accent: #1f5c8b; --accent-ink: #ffffff; --line: #e3e7ec; --chip: #eef3f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #10161d; --card: #182028; --ink: #e8edf2; --muted: #9fb0c0;
+      --accent: #5ea3d8; --accent-ink: #0e1620; --line: #26303b; --chip: #202b36;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 64px 0 40px; border-bottom: 1px solid var(--line); }
+  h1 { font-size: 2.1rem; letter-spacing: 0.01em; }
+  .tagline { color: var(--muted); font-size: 1.12rem; margin-top: 6px; }
+  .statusline { margin-top: 14px; font-size: 0.98rem; }
+  .links { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .links a {
+    display: inline-block; padding: 8px 16px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-size: 0.92rem;
+    background: var(--card);
+  }
+  .links a.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .links a:hover { border-color: var(--accent); }
+  section { padding: 40px 0 8px; }
+  h2 {
+    font-size: 1.05rem; text-transform: uppercase; letter-spacing: 0.14em;
+    color: var(--accent); margin-bottom: 22px;
+  }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 26px 28px; margin-bottom: 22px;
+  }
+  .card h3 { font-size: 1.22rem; margin-bottom: 2px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 14px; }
+  .card p { margin-bottom: 12px; }
+  .card p:last-child { margin-bottom: 0; }
+  .numbers { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+  .numbers span {
+    background: var(--chip); border: 1px solid var(--line); border-radius: 8px;
+    padding: 6px 12px; font-size: 0.86rem; color: var(--ink);
+  }
+  .honest {
+    border-left: 3px solid var(--accent); padding: 2px 0 2px 14px;
+    color: var(--muted); font-size: 0.95rem;
+  }
+  .repo-link a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .repo-link a:hover { text-decoration: underline; }
+  .video { position: relative; padding-top: 56.25%; border-radius: 10px; overflow: hidden; margin-top: 14px; border: 1px solid var(--line); }
+  .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+  .skillgroup { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; }
+  .skillgroup h4 { font-size: 0.95rem; margin-bottom: 8px; }
+  .skillgroup p { color: var(--muted); font-size: 0.92rem; }
+  footer { border-top: 1px solid var(--line); margin-top: 48px; padding: 30px 0 48px; color: var(--muted); font-size: 0.92rem; }
+  footer a { color: var(--accent); text-decoration: none; }
+  @media (max-width: 560px) { header { padding-top: 44px; } h1 { font-size: 1.7rem; } .card { padding: 20px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Jelile Rosa Jose</h1>
+    <p class="tagline">Electronic &amp; Electrical Engineer · MedTech instrumentation, analogue front-end design, FPGA and semiconductors</p>
+    <p class="statusline">MSc Electronic &amp; Electrical Engineering, University of Leeds (September 2026) · Leeds, UK.<br>
+    Eligible for the UK Graduate Route on completion: two years of unrestricted right to work, no sponsorship required at the point of hire.</p>
+    <div class="links">
+      <a class="primary" href="mailto:jelilerosajose00@gmail.com">Email me</a>
+      <a href="https://www.linkedin.com/in/jelile-rosa-jose" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/jelilerosajose00" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <div class="card">
+      <p>I design measurement electronics for instruments that have to be trusted: medical readers, detectors, test systems. My MSc dissertation took a point-of-care medical instrument from clinical requirements to released fabrication files, and the habit I am proudest of is accounting for every number I report, from a noise floor traced to the thermal physics of a single resistor to a simulation fault caught because its output was physically impossible.</p>
+      <p>Before Leeds I worked in semiconductor device research and in industrial robotics, so I move comfortably between analogue circuits, Verilog, PCB layout, PLC automation and the lab bench.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Handheld bioluminescence reader for therapeutic drug monitoring</h3>
+      <p class="meta">MSc dissertation, University of Leeds · analogue front end and PCB · LTspice, KiCad</p>
+      <p>Complete front-end design for a handheld point-of-care reader: a Broadcom AFBR-S4N22P014M silicon photomultiplier biased at 44.5 V, an OPA657 transimpedance amplifier (30 kOhm, 1 pF), and a 16-bit ADS8866 SAR converter, powered from a single 5 V USB input.</p>
+      <div class="numbers">
+        <span>Transimpedance 29,981 &Omega; flat to 6.78 MHz</span>
+        <span>2.2 pA noise floor, fully accounted for</span>
+        <span>1.59 kHz filter: noise down 55&times;</span>
+        <span>Two detector models agree to 0.2% on charge</span>
+        <span>&gt;80 dB ambient-light spec, derived not guessed</span>
+        <span>PCB DRC violations 44 &rarr; 7, zero errors</span>
+      </div>
+      <p>I began from the clinical requirement rather than the circuit: the therapeutic drug range set the signal level, which set the detector, which set the amplifier noise budget, and which ultimately showed a 16-bit converter would do the work a 24-bit part had been assumed for. I modelled the detector two independent ways and confirmed the microcell scaling in writing with Broadcom applications engineers. When a simulation returned near-identical outputs for three different photon rates, which is physically impossible, I traced the fault to a generic op-amp model defaulting to 10 V/&micro;s against the datasheet's 700, corrected it, and re-ran the complete analysis set.</p>
+      <p class="honest">Honest scope: the board was designed, simulation-verified and released to fabrication files, but not manufactured within the project window, so performance figures are simulated rather than measured. Building and characterising it is exactly the work I want to do next.</p>
+    </div>
+
+    <div class="card">
+      <h3>FPGA servo PWM amplitude gauge</h3>
+      <p class="meta">ELEC5566M group project, University of Leeds · Verilog on a Cyclone V DE1-SoC · ModelSim, Quartus</p>
+      <p>My subsystem within a four-person FPGA signal visualiser: a Verilog PWM controller that drives an SG90 servo as a physical amplitude gauge. Every number is derived from a constraint: a 20 ms servo frame at 50 MHz is 1,000,000 ticks, which needs a 20-bit counter, with four gain positions mapped evenly from 50,000 to 100,000 ticks. Simulated in ModelSim, then validated on real hardware through the LT24 adapter, cross-checking the arm position against the seven-segment display.</p>
+      <p class="repo-link">Code and full design derivation: <a href="https://github.com/jelilerosajose00/fpga-servo-pwm-gauge" target="_blank" rel="noopener">github.com/jelilerosajose00/fpga-servo-pwm-gauge</a></p>
+    </div>
+
+    <div class="card">
+      <h3>AlGaN/GaN HEMT biosensor research</h3>
+      <p class="meta">BTech research work · semiconductor device physics</p>
+      <p>Undergraduate research on AlGaN/GaN high-electron-mobility transistor biosensors: device modelling, analysis of the two-dimensional electron gas channel, and surface functionalisation for biosensing. This is where my interest in the boundary between semiconductor physics and medical measurement began.</p>
+    </div>
+
+    <div class="card">
+      <h3>Robotics and industrial automation</h3>
+      <p class="meta">Autobonics Pvt Ltd, Kerala · industrial automation training · MSc group project</p>
+      <p>At Autobonics I designed a humanoid robot in Fusion 360 with a fully 3D-printed structure, and worked as a robotics trainer teaching engineering students robot design, build and Python programming. I later completed an industrial automation programme covering Siemens TIA Portal, PROFINET and PLC/SCADA systems, and in my MSc group project I worked on a robotic sorting system.</p>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/KwF8I8Ri0P8" title="Robotics internship programme at Autobonics" loading="lazy" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="speaking">
+  <div class="wrap">
+    <h2>Speaking, teaching &amp; leadership</h2>
+
+    <div class="card">
+      <h3>Finalist, WiSTEM2D Speak Out Challenge</h3>
+      <p class="meta">Johnson &amp; Johnson MedTech · on-site final at DePuy Synthes, Leeds · July 2026</p>
+      <p>Selected as a finalist in J&amp;J's Women in STEM2D Speak Out Challenge, presenting a talk called <em>Engineering to Save Lives</em> at the on-site final in their Leeds building: technical storytelling, on a stage, to an audience of engineers and leaders.</p>
+    </div>
+
+    <div class="card">
+      <h3>Robotics trainer, Autobonics</h3>
+      <p class="meta">Kerala, India</p>
+      <p>Taught engineering students the fundamentals of robotics: mechanical design, 3D printing, build and Python programming. Standing in front of a class of engineers is where I learned to structure an explanation so it lands the first time.</p>
+    </div>
+
+    <div class="card">
+      <h3>Technical training delivery, Schindler</h3>
+      <p class="meta">Customer engineer training on live electromechanical systems</p>
+      <p>Trained customer engineers across more than fifty cohorts on live electromechanical systems, which taught me the skill I use in every technical conversation since: explaining exactly what a measurement means to someone who has to act on it.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skillgroup"><h4>Analogue &amp; mixed signal</h4><p>Transimpedance amplifier design, noise analysis and budgeting, SAR ADC integration, LTspice (DC, AC, noise, transient), power supply design</p></div>
+      <div class="skillgroup"><h4>PCB design</h4><p>KiCad schematic capture and layout, design rule verification, decoupling and high-frequency layout discipline, BoM management</p></div>
+      <div class="skillgroup"><h4>Digital &amp; FPGA</h4><p>Verilog RTL, ModelSim simulation, Quartus Prime, Cyclone V DE1-SoC, timing derivation from first principles</p></div>
+      <div class="skillgroup"><h4>Semiconductors</h4><p>Device modelling, AlGaN/GaN HEMTs, 2DEG channel analysis, surface functionalisation</p></div>
+      <div class="skillgroup"><h4>Automation &amp; robotics</h4><p>Siemens TIA Portal, PROFINET, PLC/SCADA, FANUC SCARA, Doosan M1013, YOLOv8, Fusion 360, 3D printing</p></div>
+      <div class="skillgroup"><h4>Programming</h4><p>Python, MATLAB, Verilog, Git</p></div>
+      <div class="skillgroup"><h4>Communication</h4><p>Public speaking (WiSTEM2D Speak Out finalist), technical presentation, training delivery across 50+ cohorts, teaching engineering students</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Jelile Rosa Jose · Leeds, UK · <a href="mailto:jelilerosajose00@gmail.com">jelilerosajose00@gmail.com</a> · <a href="https://www.linkedin.com/in/jelile-rosa-jose" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/jelilerosajose00" target="_blank" rel="noopener">GitHub</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
