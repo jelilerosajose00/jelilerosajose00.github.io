@@ -59,6 +59,7 @@
   }
   .repo-link a { color: var(--accent); text-decoration: none; font-weight: 600; }
   .repo-link a:hover { text-decoration: underline; }
+  .shot { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); margin: 6px 0 16px; }
   .video { position: relative; padding-top: 56.25%; border-radius: 10px; overflow: hidden; margin-top: 14px; border: 1px solid var(--line); }
   .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
   .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
@@ -76,7 +77,7 @@
   <div class="wrap">
     <h1>Jelile Rosa Jose</h1>
     <p class="tagline">Electronic &amp; Electrical Engineer · MedTech instrumentation, analogue front-end design, FPGA and semiconductors</p>
-    <p class="statusline">MSc Electronic &amp; Electrical Engineering, University of Leeds (September 2026) · Leeds, UK.<br>
+    <p class="statusline">MSc Electronic &amp; Electrical Engineering, University of Leeds (expected February 2027) · Leeds, UK.<br>
     Eligible for the UK Graduate Route on completion: two years of unrestricted right to work, no sponsorship required at the point of hire.</p>
     <div class="links">
       <a class="primary" href="mailto:jelilerosajose00@gmail.com">Email me</a>
@@ -103,6 +104,7 @@
     <div class="card">
       <h3>Handheld bioluminescence reader for therapeutic drug monitoring</h3>
       <p class="meta">MSc dissertation, University of Leeds · analogue front end and PCB · LTspice, KiCad</p>
+      <img class="shot" src="images/bioluminescent-reader.jpg" alt="KiCad PCB layout of the reader next to an LTspice plot of the transimpedance amplifier response to a single photon" loading="lazy">
       <p>Complete front-end design for a handheld point-of-care reader: a Broadcom AFBR-S4N22P014M silicon photomultiplier biased at 44.5 V, an OPA657 transimpedance amplifier (30 kOhm, 1 pF), and a 16-bit ADS8866 SAR converter, powered from a single 5 V USB input.</p>
       <div class="numbers">
         <span>Transimpedance 29,981 &Omega; flat to 6.78 MHz</span>
@@ -119,7 +121,8 @@
     <div class="card">
       <h3>FPGA servo PWM amplitude gauge</h3>
       <p class="meta">ELEC5566M group project, University of Leeds · Verilog on a Cyclone V DE1-SoC · ModelSim, Quartus</p>
-      <p>My subsystem within a four-person FPGA signal visualiser: a Verilog PWM controller that drives an SG90 servo as a physical amplitude gauge. Every number is derived from a constraint: a 20 ms servo frame at 50 MHz is 1,000,000 ticks, which needs a 20-bit counter, with four gain positions mapped evenly from 50,000 to 100,000 ticks. Simulated in ModelSim, then validated on real hardware through the LT24 adapter, cross-checking the arm position against the seven-segment display.</p>
+      <img class="shot" src="images/fpga-servo-gauge.jpg" alt="Three photos of the DE1-SoC board with the servo arm at gain 1, 2 and 3" loading="lazy">
+      <p>My subsystem within a four-person FPGA signal visualiser: a Verilog PWM controller that drives an SG90 servo as a physical amplitude gauge. Every number is derived from a constraint: a 20 ms servo frame at 50 MHz is 1,000,000 ticks, which needs a 20-bit counter, with three gain positions at 1.0, 1.5 and 2.0 ms (50,000, 75,000 and 100,000 ticks). Simulated in ModelSim, then validated on real hardware through the LT24 adapter, cross-checking the arm position against the seven-segment display.</p>
       <p class="repo-link">Code and full design derivation: <a href="https://github.com/jelilerosajose00/fpga-servo-pwm-gauge" target="_blank" rel="noopener">github.com/jelilerosajose00/fpga-servo-pwm-gauge</a></p>
     </div>
 
@@ -130,12 +133,33 @@
     </div>
 
     <div class="card">
-      <h3>Robotics and industrial automation</h3>
-      <p class="meta">Autobonics Pvt Ltd, Kerala · industrial automation training · MSc group project</p>
-      <p>At Autobonics I designed a humanoid robot in Fusion 360 with a fully 3D-printed structure, and worked as a robotics trainer teaching engineering students robot design, build and Python programming. I later completed an industrial automation programme covering Siemens TIA Portal, PROFINET and PLC/SCADA systems, and in my MSc group project I worked on a robotic sorting system.</p>
+      <h3>AI-guided e-waste recovery: robotic component extraction</h3>
+      <p class="meta">ELEC5032M Modern Industry Practice, University of Leeds · five-person design study · FANUC, iRVision, PLC integration</p>
+      <img class="shot" src="images/ewaste-robotic-extraction.jpg" alt="Block diagram of the robotic component extraction subsystem with a FANUC SCARA robot" loading="lazy">
+      <p>My subsystem in a pilot-scale design for recovering components and copper from waste PCBs. I designed the extraction cell around a FANUC M-1iA/0.5S SCARA robot and R-30iB Compact Plus controller, with a fixed overhead iRVision camera so coordinates do not drift with robot motion, and specified a ceramic-tip vacuum end-effector that desolders and lifts each component in one step. Consolidating the earlier two-arm proposal into a single SCARA cut cost and mechanical complexity without losing the precision the task needs.</p>
+      <p class="honest">Design study: components were selected, costed and specified, but the system was not built.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+
+    <div class="card">
+      <h3>Robotics Trainer, Autobonics Pvt Ltd</h3>
+      <p class="meta">Kerala, India · 3 months</p>
+      <p>Helped run a hands-on robotics programme for engineering students, taking them from mechanical design and 3D printing through to build and Python programming. I designed a humanoid robot in Fusion 360 with a fully 3D-printed structure for the programme. The video below is from one of the classes.</p>
       <div class="video">
-        <iframe src="https://www.youtube.com/embed/KwF8I8Ri0P8" title="Robotics internship programme at Autobonics" loading="lazy" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/KwF8I8Ri0P8" title="Robotics class at Autobonics" loading="lazy" allowfullscreen></iframe>
       </div>
+    </div>
+
+    <div class="card">
+      <h3>Industrial automation programme, ED Wartens India</h3>
+      <p class="meta">2025 · Siemens TIA Portal, PROFINET, PLC, SCADA, HMI</p>
+      <p>Hands-on training in PLC programming and SCADA/HMI configuration on Siemens TIA Portal.</p>
     </div>
 
   </div>
@@ -149,12 +173,6 @@
       <h3>Finalist, WiSTEM2D Speak Out Challenge</h3>
       <p class="meta">Johnson &amp; Johnson MedTech · on-site final at DePuy Synthes, Leeds · July 2026</p>
       <p>Selected as a finalist in J&amp;J's Women in STEM2D Speak Out Challenge, presenting a talk called <em>Engineering to Save Lives</em> at the on-site final in their Leeds building: technical storytelling, on a stage, to an audience of engineers and leaders.</p>
-    </div>
-
-    <div class="card">
-      <h3>Robotics trainer, Autobonics</h3>
-      <p class="meta">Kerala, India</p>
-      <p>Taught engineering students the fundamentals of robotics: mechanical design, 3D printing, build and Python programming. Standing in front of a class of engineers is where I learned to structure an explanation so it lands the first time.</p>
     </div>
 
     <div class="card">
